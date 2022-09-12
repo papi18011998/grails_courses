@@ -4,9 +4,14 @@ class User {
     String username;
     String password;
     String fullname;
+    String toString(){
+        fullname
+    }
     //Representation des relations
     static hasMany = [projects: Project, tasks: Task]
     static constraints = {
-        dataSource 'grails_testdb'
+        fullname()
+        password()
+        username()
     }
 }
