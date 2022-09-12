@@ -4,6 +4,9 @@ class UserController {
 
     def index() {
         // liste des utilisateurs
-        [message:message]
+        def allUsers = User.list();
+        [
+                allUsers: allUsers
+        ]
     }
 }
