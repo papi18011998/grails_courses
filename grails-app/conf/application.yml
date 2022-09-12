@@ -106,7 +106,7 @@ hibernate:
         use_query_cache: false
 dataSource:
     pooled: true
-    dbCreate: update
+    dbCreate: create
     dirverClassName: com.mysql.cj.jdbc.Driver
     username: papi
     password: papi
