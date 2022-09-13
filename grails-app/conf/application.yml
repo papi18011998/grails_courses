@@ -106,7 +106,7 @@ hibernate:
         use_query_cache: false
 dataSource:
     pooled: true
-    dbCreate: create
+    dbCreate: update
     dirverClassName: com.mysql.cj.jdbc.Driver
     username: papi
     password: papi
@@ -116,7 +116,7 @@ environments:
     development:
         dataSource:
             pooled: true
-            dbCreate: create-drop
+            dbCreate: update
             dirverClassName: com.mysql.cj.jdbc.Driver
             username: papi
             password: papi
@@ -124,7 +124,7 @@ environments:
     test:
         dataSource:
             pooled: true
-            dbCreate: create-drop
+            dbCreate: update
             dirverClassName: com.mysql.cj.jdbc.Driver
             username: papi
             password: papi
@@ -132,7 +132,7 @@ environments:
     production:
         dataSource:
             pooled: true
-            dbCreate: create-drop
+            dbCreate: update
             dirverClassName: com.mysql.cj.jdbc.Driver
             username: papi
             password: papi

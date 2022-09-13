@@ -11,7 +11,7 @@ class Project {
     static belongsTo = [owner: User]
     static hasMany = [tasks: Task]
     static constraints = {
-        name()
+        name(blank: false, unique: true, max: 20,min: 2)
         description()
         dueDate()
     }

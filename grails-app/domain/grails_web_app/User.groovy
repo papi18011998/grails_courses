@@ -11,7 +11,7 @@ class User {
     static hasMany = [projects: Project, tasks: Task]
     static constraints = {
         fullname()
-        password()
+        password(password:true)
         username()
     }
 }
